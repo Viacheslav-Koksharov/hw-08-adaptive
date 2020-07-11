@@ -1,0 +1,28 @@
+/* Наши клиенты */
+
+.clients-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -15px;
+}
+.clients-box {
+	@media screen and (max-width: 767px) {
+		width: calc((100% - 4 * 15px) / 2);
+		margin: 15px;
+	}
+}
+
+.clients-logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	fill: #afb1b8;
+	border: 1px solid #afb1b8;
+	border-radius: 4px;
+	height: 90px;
+	&:hover {
+		border: 1px solid $accent-color;
+		fill: $accent-color;
+		transition: $transition;
+	}
+}

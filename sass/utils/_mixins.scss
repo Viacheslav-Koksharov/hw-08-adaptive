@@ -1,0 +1,7 @@
+@mixin generateicons($iconlist) {
+	@each $iconname in $iconlist {
+		.icon-#{$iconname} {
+			fill: #ffffff;
+		}
+	}
+}

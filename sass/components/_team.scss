@@ -1,0 +1,83 @@
+/* Команда */
+.section-team {
+	padding-bottom: 94px;
+	// margin-bottom: 94px;
+	background-color: #f5f4fa;
+}
+.team-list {
+	// display: flex;
+	text-align: center;
+}
+.team-card {
+	display: block;
+	box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+	border-radius: 0px 0px 4px 4px;
+	// width: calc((100% - 3 * 30px) / 4);
+	// &:not(:last-child) {
+	// 	margin-right: 30px;
+	// }
+}
+
+.team-title {
+	margin-top: 30px;
+	margin-bottom: 10px;
+	color: $title-color;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
+}
+.team-text {
+	margin-top: 0px;
+	margin-bottom: 16px;
+	color: $primery-color;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
+}
+.team-media {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 24px;
+}
+
+.icon-media:not(:last-child) {
+	margin-right: 10px;
+}
+
+.social-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	&:hover {
+		background-color: $accent-color;
+		transition: $transition;
+	}
+}
+.social-link:hover {
+	@include generateicons($icons);
+}
+.icon-instagram {
+	width: 20px;
+	height: 20px;
+	fill: #afb1b8;
+}
+.icon-twitter {
+	width: 20px;
+	height: 16px;
+	fill: #afb1b8;
+}
+.icon-facebook {
+	width: 20px;
+	height: 20px;
+	fill: #afb1b8;
+}
+.icon-linkedin {
+	width: 20px;
+	height: 20px;
+	fill: #afb1b8;
+}
