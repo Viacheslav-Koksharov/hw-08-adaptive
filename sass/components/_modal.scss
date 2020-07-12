@@ -135,16 +135,13 @@
 	cursor: pointer;
 }
 .checkbox-text {
-	// display: block;
-	// align-items: center;
 	font-family: Roboto, sans-serif;
 	font-size: 12px;
 	font-weight: 400;
-	// text-align: center;
 	line-height: 1.17;
 	letter-spacing: 0.03em;
-	@media screen and (max-width: 767px) {font-size: 12px;}
-		
+	@media screen and (max-width: 767px) {
+		font-size: 12px;
 	}
 }
 .icon-check {
@@ -171,7 +168,9 @@
 	text-align: right;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
-	@media screen and (max-width: 767px) {font-size: 12px;}
+	@media screen and (max-width: 767px) {
+		font-size: 12px;
+	}
 }
 .close {
 	position: absolute;
