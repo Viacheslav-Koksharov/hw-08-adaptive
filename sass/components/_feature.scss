@@ -1,10 +1,8 @@
 /* Преимущества */
 
 .feature-list {
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
 		display: flex;
-		// align-items: center;
-		// justify-content: center;
 		flex-wrap: wrap;
 	}
 }
@@ -12,24 +10,25 @@
 	color: #fff;
 }
 .feature-box {
-	@media screen and (min-width: 768px) {
-		display: flex;
-		flex-wrap: wrap;
-		width: calc((100% - 2 * 30px) / 2);
-		// margin-right: 15px;
-		// margin-left: 15px;
-	}
-	@media screen and (min-width: 1200px) {
-		display: flex;
-		flex-wrap: wrap;
-		width: calc((100% - 4 * 30px) / 4);
-		// margin-right: 15px;
-		// margin-left: 15px;
-	}
 	&:not(:last-child) {
 		@media screen and (max-width: 767px) {
 			margin-bottom: 30px;
 		}
+	}
+	@media screen and (min-width: 768px) {
+		display: block;
+		width: calc((100% - 1 * 30px) / 2);
+		margin-right: 30px;
+		&:nth-child(2n) {
+			@media screen and (min-width: 768px) {
+				margin-right: 0px;
+			}
+		}
+	}
+	@media screen and (min-width: 1200px) {
+		display: inline-block;
+		flex-wrap: wrap;
+		width: calc((100% - 3 * 30px) / 4);
 	}
 }
 
@@ -43,23 +42,19 @@
 	background-repeat: no-repeat;
 }
 .feature-box:nth-child(1)::before {
-	background-image: url(../../css/imgcss/antenna.svg);
+	background-image: url(../../images/antenna.svg);
 }
 .feature-box:nth-child(2)::before {
-	background-image: url(../../css/imgcss/clock.svg);
+	background-image: url(../../images/clock.svg);
 }
 .feature-box:nth-child(3)::before {
-	background-image: url(../../css/imgcss/diagram.svg);
+	background-image: url(../../images/diagram.svg);
 }
 .feature-box:nth-child(4)::before {
-	background-image: url(../../css/imgcss/astronaut.svg);
-}
-.feature-box:not(:last-child) {
-	// margin-right: 30px;
+	background-image: url(../../images/astronaut.svg);
 }
 
 .feature-title {
-	text-align: center;
 	margin-top: 30px;
 	margin-bottom: 10px;
 	color: #212121;

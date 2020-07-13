@@ -769,7 +769,7 @@ img {
 }
 
 /* Преимущества */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .feature-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -783,31 +783,32 @@ img {
   color: #fff;
 }
 
+@media screen and (max-width: 767px) {
+  .feature-box:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .feature-box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: calc((100% - 2 * 30px) / 2);
+    display: block;
+    width: calc((100% - 1 * 30px) / 2);
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 768px) {
+  .feature-box:nth-child(2n) {
+    margin-right: 0px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .feature-box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: inline-block;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: calc((100% - 4 * 30px) / 4);
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .feature-box:not(:last-child) {
-    margin-bottom: 30px;
+    width: calc((100% - 3 * 30px) / 4);
   }
 }
 
@@ -822,23 +823,22 @@ img {
 }
 
 .feature-box:nth-child(1)::before {
-  background-image: url(../../css/imgcss/antenna.svg);
+  background-image: url(../../images/antenna.svg);
 }
 
 .feature-box:nth-child(2)::before {
-  background-image: url(../../css/imgcss/clock.svg);
+  background-image: url(../../images/clock.svg);
 }
 
 .feature-box:nth-child(3)::before {
-  background-image: url(../../css/imgcss/diagram.svg);
+  background-image: url(../../images/diagram.svg);
 }
 
 .feature-box:nth-child(4)::before {
-  background-image: url(../../css/imgcss/astronaut.svg);
+  background-image: url(../../images/astronaut.svg);
 }
 
 .feature-title {
-  text-align: center;
   margin-top: 30px;
   margin-bottom: 10px;
   color: #212121;
@@ -995,7 +995,7 @@ img {
 }
 
 /* Наши клиенты */
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .clients-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1006,7 +1006,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .clients-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1016,10 +1016,40 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .clients-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .clients-box {
     width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients-box {
+    width: calc((100% - 2 * 30px) / 3);
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-width: 768px) {
+  .clients-box:nth-child(3n) {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-box {
+    width: calc((100% - 5 * 30px) / 6);
+  }
+  .clients-box:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
