@@ -1,6 +1,6 @@
 /* Чем мы занимаемся */
 .work-list {
-	// display: flex;
+	display: flex;
 }
 .work-box {
 	position: relative;
@@ -13,9 +13,9 @@
 	position: absolute;
 	left: 0;
 	bottom: 0;
-	// display: flex;
-	// justify-content: center;
-	// align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
 	height: 70px;
 	margin: 0px;

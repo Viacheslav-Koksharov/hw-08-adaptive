@@ -12,7 +12,7 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
 		/>
-		<link rel="stylesheet" href="./css/portfolio.min.css" />
+		<link rel="stylesheet" href="./css/main.min.css" />
 	</head>
 
 	<body class="page">
@@ -23,32 +23,45 @@
 						<span class="logo-partone">Web</span>
 						<span class="logo-parttwo">Studio</span>
 					</a>
-					<ul class="site-nav list">
-						<li class="item"><a href="./index.html" class="link">Студия</a></li>
-						<li class="item">
-							<a href="./portfolio.html" class="link current">Портфолио</a>
-						</li>
-						<li class="item"><a href="#" class="link">Контакты</a></li>
-					</ul>
-
-					<ul class="auth-nav">
-						<li class="itemnav">
-							<a href="mailto:info@devstudio.com" class="link">
-								<svg class="icon-mail" width="20px" height="20px">
-									<use href="./images/sprite.svg#icon-mail"></use>
-								</svg>
-								info@devstudio.com
-							</a>
-						</li>
-						<li class="itemnav">
-							<a href="tel:+380961111111" class="link">
-								<svg class="icon-phone" width="20px" height="20px">
-									<use href="./images/sprite.svg#icon-phone"></use>
-								</svg>
-								+38 096 111 11 11
-							</a>
-						</li>
-					</ul>
+					<button
+						type="button"
+						class="burger-button"
+						aria-expanded="false"
+						aria-controls="burger-container"
+						data-menu-button
+					>
+						<svg width="40" height="40" aria-label="Переключатель мобильного меню">
+							<use class="burger-menu" href="./images/sprite.svg#icon-menu"></use>
+							<use class="burger-close" href="./images/sprite.svg#icon-close"></use>
+						</svg>
+					</button>
+					<div class="burger-container" id="burger-container" data-menu>
+						<ul class="site-nav">
+							<li class="item"><a href="./index.html" class="link">Студия</a></li>
+							<li class="item">
+								<a href="./portfolio.html" class="link current">Портфолио</a>
+							</li>
+							<li class="item"><a href="#" class="link">Контакты</a></li>
+						</ul>
+						<ul class="auth-nav">
+							<li class="itemnav">
+								<a href="mailto:info@devstudio.com" class="link">
+									<svg class="icon-mail" width="20px" height="20px">
+										<use href="./images/sprite.svg#icon-mail"></use>
+									</svg>
+									info@devstudio.com
+								</a>
+							</li>
+							<li class="itemnav">
+								<a href="tel:+380961111111" class="link">
+									<svg class="icon-phone" width="20px" height="20px">
+										<use href="./images/sprite.svg#icon-phone"></use>
+									</svg>
+									+38 096 111 11 11
+								</a>
+							</li>
+						</ul>
+					</div>
 				</nav>
 			</div>
 		</header>
@@ -70,7 +83,54 @@
 						<li class="projects-box">
 							<a href="">
 								<div class="project-example">
-									<img src="./images/pf-one.jpg" alt="Пример сайта" />
+									<picture>
+										<source
+											srcset="
+												./images/tehdesk370.webp     370w,
+												./images/tehdesk370@2x.webp  740w,
+												./images/tehdesk370@3x.webp 1110w
+											"
+											type="image/webp"
+											media="(min-width: 1200px)"
+											sizes="{min-width: 1200px} 370px, {min-width: 768px} 354px, 450px "
+										/>
+										<source
+											srcset="
+												./images/tehtab354.webp     354w,
+												./images/tehtab354@2x.webp  708w,
+												./images/tehtab354@3x.webp 1062w
+											"
+											type="image/webp"
+											media="(min-width: 768px)"
+											sizes="{min-width: 1200px} 370px, {min-width: 768px} 354px, 450px "
+										/>
+										<source
+											srcset="
+												./images/tehmob450.webp     450w,
+												./images/tehmob450@2x.webp  900w,
+												./images/tehmob450@3x.webp 1350w
+											"
+											type="image/webp"
+											media="(max-width: 767px)"
+											sizes="{min-width: 1200px} 370px, {min-width: 768px} 354px, 450px "
+										/>
+										<img
+											srcset="
+												./images/tehmob450@2x.jpg   900w,
+												./images/tehmob450@3x.jpg  1350w,
+												./images/tehtab354.jpg      354w,
+												./images/tehtab354@2x.jpg   708w,
+												./images/tehtab354@3x.jpg  1062w,
+												./images/tehdesk370.jpg     370w,
+												./images/tehdesk370@2x.jpg  740w,
+												./images/tehdesk370@3x.jpg 1110w,
+												./images/tehmob450.jpg      450w
+											"
+											src="./images/tehdesk370.jpg"
+											alt="Технокряк"
+											sizes="{min-width: 1200px} 370px, {min-width: 768px} 354px, 450px "
+										/>
+									</picture>
 									<p class="portfolio-overlay">
 										Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
 										для цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -83,7 +143,54 @@
 						<li class="projects-box">
 							<a href="">
 								<div class="project-example">
-									<img src="./images/pf-two.jpg" alt="Дизайн постера" />
+									<picture>
+										<source
+											srcset="
+												./images/posdesk370.webp     370w,
+												./images/posdesk370@2x.webp  740w,
+												./images/posdesk370@3x.webp 1110w
+											"
+											type="image/webp"
+											media="(min-width: 1200px)"
+											sizes="{min-width: 1200px} 370px, {min-width: 768px} 354px, 450px "
+										/>
+										<source
+											srcset="
+												./images/postab354.webp     354w,
+												./images/postab354@2x.webp  708w,
+												./images/postab354@3x.webp 1062w
+											"
+											type="image/webp"
+											media="(min-width: 768px)"
+											sizes="{min-width: 1200px} 370px, {min-width: 768px} 354px, 450px "
+										/>
+										<source
+											srcset="
+												./images/posmob450.webp     450w,
+												./images/posmob450@2x.webp  900w,
+												./images/posmob450@3x.webp 1350w
+											"
+											type="image/webp"
+											media="(max-width: 767px)"
+											sizes="{min-width: 1200px} 370px, {min-width: 768px} 354px, 450px "
+										/>
+										<img
+											srcset="
+												./images/posmob450@2x.jpg   900w,
+												./images/posmob450@3x.jpg  1350w,
+												./images/postab354.jpg      354w,
+												./images/postab354@2x.jpg   708w,
+												./images/postab354@3x.jpg  1062w,
+												./images/posdesk370.jpg     370w,
+												./images/posdesk370@2x.jpg  740w,
+												./images/posdesk370@3x.jpg 1110w,
+												./images/posmob450.jpg      450w
+											"
+											src="./images/posdesk370.jpg"
+											alt="Постер"
+											sizes="{min-width: 1200px} 370px, {min-width: 768px} 354px, 450px "
+										/>
+									</picture>
 									<p class="portfolio-overlay">
 										Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere quibusdam in nihil aliquid. Unde
 										perferendis sint dicta iure rerum!
@@ -96,7 +203,54 @@
 						<li class="projects-box">
 							<a href="">
 								<div class="project-example">
-									<img src="./images/pf-three.jpg" alt="Логотип приложения" />
+									<picture>
+										<source
+											srcset="
+												./images/resdesk370.webp     370w,
+												./images/resdesk370@2x.webp  740w,
+												./images/resdesk370@3x.webp 1110w
+											"
+											type="image/webp"
+											media="(min-width: 1200px)"
+											sizes="{min-width: 1200px} 370px, {min-width: 768px} 354px, 450px "
+										/>
+										<source
+											srcset="
+												./images/restab354.webp     354w,
+												./images/restab354@2x.webp  708w,
+												./images/restab354@3x.webp 1062w
+											"
+											type="image/webp"
+											media="(min-width: 768px)"
+											sizes="{min-width: 1200px} 370px, {min-width: 768px} 354px, 450px "
+										/>
+										<source
+											srcset="
+												./images/resmob450.webp     450w,
+												./images/resmob450@2x.webp  900w,
+												./images/resmob450@3x.webp 1350w
+											"
+											type="image/webp"
+											media="(max-width: 767px)"
+											sizes="{min-width: 1200px} 370px, {min-width: 768px} 354px, 450px "
+										/>
+										<img
+											srcset="
+												./images/resmob450@2x.jpg   900w,
+												./images/resmob450@3x.jpg  1350w,
+												./images/restab354.jpg      354w,
+												./images/restab354@2x.jpg   708w,
+												./images/restab354@3x.jpg  1062w,
+												./images/resdesk370.jpg     370w,
+												./images/resdesk370@2x.jpg  740w,
+												./images/resdesk370@3x.jpg 1110w,
+												./images/resmob450.jpg      450w
+											"
+											src="./images/resdesk370.jpg"
+											alt="Ресторан"
+											sizes="{min-width: 1200px} 370px, {min-width: 768px} 354px, 450px "
+										/>
+									</picture>
 									<p class="portfolio-overlay">
 										Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere quibusdam in nihil aliquid. Unde
 										perferendis sint dicta iure rerum!
@@ -109,7 +263,54 @@
 						<li class="projects-box">
 							<a href="">
 								<div class="project-example">
-									<img src="./images/pf-four.jpg" alt="Наушники" />
+									<picture>
+										<source
+											srcset="
+												./images/pridesk370.webp     370w,
+												./images/pridesk370@2x.webp  740w,
+												./images/pridesk370@3x.webp 1110w
+											"
+											type="image/webp"
+											media="(min-width: 1200px)"
+											sizes="{min-width: 1200px} 370px, {min-width: 768px} 354px, 450px "
+										/>
+										<source
+											srcset="
+												./images/pritab354.webp     354w,
+												./images/pritab354@2x.webp  708w,
+												./images/pritab354@3x.webp 1062w
+											"
+											type="image/webp"
+											media="(min-width: 768px)"
+											sizes="{min-width: 1200px} 370px, {min-width: 768px} 354px, 450px "
+										/>
+										<source
+											srcset="
+												./images/primob450.webp     450w,
+												./images/primob450@2x.webp  900w,
+												./images/primob450@3x.webp 1350w
+											"
+											type="image/webp"
+											media="(max-width: 767px)"
+											sizes="{min-width: 1200px} 370px, {min-width: 768px} 354px, 450px "
+										/>
+										<img
+											srcset="
+												./images/primob450@2x.jpg   900w,
+												./images/primob450@3x.jpg  1350w,
+												./images/pritab354.jpg      354w,
+												./images/pritab354@2x.jpg   708w,
+												./images/pritab354@3x.jpg  1062w,
+												./images/pridesk370.jpg     370w,
+												./images/pridesk370@2x.jpg  740w,
+												./images/pridesk370@3x.jpg 1110w,
+												./images/primob450.jpg      450w
+											"
+											src="./images/pridesk370.jpg"
+											alt="Прайм"
+											sizes="{min-width: 1200px} 370px, {min-width: 768px} 354px, 450px "
+										/>
+									</picture>
 									<p class="portfolio-overlay">
 										Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere quibusdam in nihil aliquid. Unde
 										perferendis sint dicta iure rerum!
@@ -122,7 +323,54 @@
 						<li class="projects-box">
 							<a href="">
 								<div class="project-example">
-									<img src="./images/pf-five.jpg" alt="Коробки" />
+									<picture>
+										<source
+											srcset="
+												./images/boxdesk370.webp     370w,
+												./images/boxdesk370@2x.webp  740w,
+												./images/boxdesk370@3x.webp 1110w
+											"
+											type="image/webp"
+											media="(min-width: 1200px)"
+											sizes="{min-width: 1200px} 370px, {min-width: 768px} 354px, 450px "
+										/>
+										<source
+											srcset="
+												./images/boxtab354.webp     354w,
+												./images/boxtab354@2x.webp  708w,
+												./images/boxtab354@3x.webp 1062w
+											"
+											type="image/webp"
+											media="(min-width: 768px)"
+											sizes="{min-width: 1200px} 370px, {min-width: 768px} 354px, 450px "
+										/>
+										<source
+											srcset="
+												./images/boxmob450.webp     450w,
+												./images/boxmob450@2x.webp  900w,
+												./images/boxmob450@3x.webp 1350w
+											"
+											type="image/webp"
+											media="(max-width: 767px)"
+											sizes="{min-width: 1200px} 370px, {min-width: 768px} 354px, 450px "
+										/>
+										<img
+											srcset="
+												./images/boxmob450@2x.jpg   900w,
+												./images/boxmob450@3x.jpg  1350w,
+												./images/boxtab354.jpg      354w,
+												./images/boxtab354@2x.jpg   708w,
+												./images/boxtab354@3x.jpg  1062w,
+												./images/boxdesk370.jpg     370w,
+												./images/boxdesk370@2x.jpg  740w,
+												./images/boxdesk370@3x.jpg 1110w,
+												./images/boxmob450.jpg      450w
+											"
+											src="./images/boxdesk370.jpg"
+											alt="Коровки"
+											sizes="{min-width: 1200px} 370px, {min-width: 768px} 354px, 450px "
+										/>
+									</picture>
 									<p class="portfolio-overlay">
 										Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere quibusdam in nihil aliquid. Unde
 										perferendis sint dicta iure rerum!
@@ -135,7 +383,54 @@
 						<li class="projects-box">
 							<a href="">
 								<div class="project-example">
-									<img src="./images/pf-six.jpg" alt="Монитор" />
+									<picture>
+										<source
+											srcset="
+												./images/insdesk370.webp     370w,
+												./images/insdesk370@2x.webp  740w,
+												./images/insdesk370@3x.webp 1110w
+											"
+											type="image/webp"
+											media="(min-width: 1200px)"
+											sizes="{min-width: 1200px} 370px, {min-width: 768px} 354px, 450px "
+										/>
+										<source
+											srcset="
+												./images/instab354.webp     354w,
+												./images/instab354@2x.webp  708w,
+												./images/instab354@3x.webp 1062w
+											"
+											type="image/webp"
+											media="(min-width: 768px)"
+											sizes="{min-width: 1200px} 370px, {min-width: 768px} 354px, 450px "
+										/>
+										<source
+											srcset="
+												./images/insmob450.webp     450w,
+												./images/insmob450@2x.webp  900w,
+												./images/insmob450@3x.webp 1350w
+											"
+											type="image/webp"
+											media="(max-width: 767px)"
+											sizes="{min-width: 1200px} 370px, {min-width: 768px} 354px, 450px "
+										/>
+										<img
+											srcset="
+												./images/insmob450@2x.jpg   900w,
+												./images/insmob450@3x.jpg  1350w,
+												./images/instab354.jpg      354w,
+												./images/instab354@2x.jpg   708w,
+												./images/instab354@3x.jpg  1062w,
+												./images/insdesk370.jpg     370w,
+												./images/insdesk370@2x.jpg  740w,
+												./images/insdesk370@3x.jpg 1110w,
+												./images/insmob450.jpg      450w
+											"
+											src="./images/insdesk370.jpg"
+											alt="Без границ"
+											sizes="{min-width: 1200px} 370px, {min-width: 768px} 354px, 450px "
+										/>
+									</picture>
 									<p class="portfolio-overlay">
 										Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere quibusdam in nihil aliquid. Unde
 										perferendis sint dicta iure rerum!
@@ -148,7 +443,54 @@
 						<li class="projects-box">
 							<a href="">
 								<div class="project-example">
-									<img src="./images/pf-seven.jpg" alt="Дизайн издания" />
+									<picture>
+										<source
+											srcset="
+												./images/limdesk370.webp     370w,
+												./images/limdesk370@2x.webp  740w,
+												./images/limdesk370@3x.webp 1110w
+											"
+											type="image/webp"
+											media="(min-width: 1200px)"
+											sizes="{min-width: 1200px} 370px, {min-width: 768px} 354px, 450px "
+										/>
+										<source
+											srcset="
+												./images/limtab354.webp     354w,
+												./images/limtab354@2x.webp  708w,
+												./images/limtab354@3x.webp 1062w
+											"
+											type="image/webp"
+											media="(min-width: 768px)"
+											sizes="{min-width: 1200px} 370px, {min-width: 768px} 354px, 450px "
+										/>
+										<source
+											srcset="
+												./images/limmob450.webp     450w,
+												./images/limmob450@2x.webp  900w,
+												./images/limmob450@3x.webp 1350w
+											"
+											type="image/webp"
+											media="(max-width: 767px)"
+											sizes="{min-width: 1200px} 370px, {min-width: 768px} 354px, 450px "
+										/>
+										<img
+											srcset="
+												./images/limmob450@2x.jpg   900w,
+												./images/limmob450@3x.jpg  1350w,
+												./images/limtab354.jpg      354w,
+												./images/limtab354@2x.jpg   708w,
+												./images/limtab354@3x.jpg  1062w,
+												./images/limdesk370.jpg     370w,
+												./images/limdesk370@2x.jpg  740w,
+												./images/limdesk370@3x.jpg 1110w,
+												./images/limmob450.jpg      450w
+											"
+											src="./images/limdesk370.jpg"
+											alt="Дизайн издания"
+											sizes="{min-width: 1200px} 370px, {min-width: 768px} 354px, 450px "
+										/>
+									</picture>
 									<p class="portfolio-overlay">
 										Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere quibusdam in nihil aliquid. Unde
 										perferendis sint dicta iure rerum!
@@ -161,7 +503,54 @@
 						<li class="projects-box">
 							<a href="">
 								<div class="project-example">
-									<img src="./images/pf-eight.jpg" alt="Бирка" />
+									<picture>
+										<source
+											srcset="
+												./images/labdesk370.webp     370w,
+												./images/labdesk370@2x.webp  740w,
+												./images/labdesk370@3x.webp 1110w
+											"
+											type="image/webp"
+											media="(min-width: 1200px)"
+											sizes="{min-width: 1200px} 370px, {min-width: 768px} 354px, 450px "
+										/>
+										<source
+											srcset="
+												./images/labtab354.webp     354w,
+												./images/labtab354@2x.webp  708w,
+												./images/labtab354@3x.webp 1062w
+											"
+											type="image/webp"
+											media="(min-width: 768px)"
+											sizes="{min-width: 1200px} 370px, {min-width: 768px} 354px, 450px "
+										/>
+										<source
+											srcset="
+												./images/labmob450.webp     450w,
+												./images/labmob450@2x.webp  900w,
+												./images/labmob450@3x.webp 1350w
+											"
+											type="image/webp"
+											media="(max-width: 767px)"
+											sizes="{min-width: 1200px} 370px, {min-width: 768px} 354px, 450px "
+										/>
+										<img
+											srcset="
+												./images/labmob450@2x.jpg   900w,
+												./images/labmob450@3x.jpg  1350w,
+												./images/labtab354.jpg      354w,
+												./images/labtab354@2x.jpg   708w,
+												./images/labtab354@3x.jpg  1062w,
+												./images/labdesk370.jpg     370w,
+												./images/labdesk370@2x.jpg  740w,
+												./images/labdesk370@3x.jpg 1110w,
+												./images/labmob450.jpg      450w
+											"
+											src="./images/labdesk370.jpg"
+											alt="Бирка"
+											sizes="{min-width: 1200px} 370px, {min-width: 768px} 354px, 450px "
+										/>
+									</picture>
 									<p class="portfolio-overlay">
 										Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere quibusdam in nihil aliquid. Unde
 										perferendis sint dicta iure rerum!
@@ -174,7 +563,54 @@
 						<li class="projects-box">
 							<a href="">
 								<div class="project-example">
-									<img src="./images/pf-nine.jpg" alt="Лептоп" />
+									<picture>
+										<source
+											srcset="
+												./images/busdesk370.webp     370w,
+												./images/busdesk370@2x.webp  740w,
+												./images/busdesk370@3x.webp 1110w
+											"
+											type="image/webp"
+											media="(min-width: 1200px)"
+											sizes="{min-width: 1200px} 370px, {min-width: 768px} 354px, 450px "
+										/>
+										<source
+											srcset="
+												./images/bustab354.webp     354w,
+												./images/bustab354@2x.webp  708w,
+												./images/bustab354@3x.webp 1062w
+											"
+											type="image/webp"
+											media="(min-width: 768px)"
+											sizes="{min-width: 1200px} 370px, {min-width: 768px} 354px, 450px "
+										/>
+										<source
+											srcset="
+												./images/busmob450.webp     450w,
+												./images/busmob450@2x.webp  900w,
+												./images/busmob450@3x.webp 1350w
+											"
+											type="image/webp"
+											media="(max-width: 767px)"
+											sizes="{min-width: 1200px} 370px, {min-width: 768px} 354px, 450px "
+										/>
+										<img
+											srcset="
+												./images/busmob450@2x.jpg   900w,
+												./images/busmob450@3x.jpg  1350w,
+												./images/bustab354.jpg      354w,
+												./images/bustab354@2x.jpg   708w,
+												./images/bustab354@3x.jpg  1062w,
+												./images/busdesk370.jpg     370w,
+												./images/busdesk370@2x.jpg  740w,
+												./images/busdesk370@3x.jpg 1110w,
+												./images/busmob450.jpg      450w
+											"
+											src="./images/busdesk370.jpg"
+											alt="Бизнес"
+											sizes="{min-width: 1200px} 370px, {min-width: 768px} 354px, 450px "
+										/>
+									</picture>
 									<p class="portfolio-overlay">
 										Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere quibusdam in nihil aliquid. Unde
 										perferendis sint dicta iure rerum!
@@ -255,6 +691,6 @@
 				</div>
 			</div>
 		</footer>
-		<script src="./js/modal.js"></script>
+		<script src="./js/burger.js"></script>
 	</body>
 </html>

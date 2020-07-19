@@ -116,15 +116,59 @@
 					<h2 class="section-title">Чем мы занимаемся</h2>
 					<ul class="work-list">
 						<li class="work-box">
-							<img src="./images/img-laptop.jpg" alt="Ноутбук" width="370" />
+							<picture>
+								<source
+									srcset="./images/deskapp370.webp, ./images/deskapp370@2x.webp 2x, ./images/deskapp370@3x.webp 3x"
+									type="image/webp"
+									media="(min-width: 1200px)"
+									sizes="{min-width:1200px} 370px"
+								/>
+								<img
+									srcset="./images/deskapp370.jpg, ./images/deskapp370@2x.jpg 2x, ./images/deskapp370@3x.jpg 3x"
+									src="./images/deskapp370.jpg"
+									alt="Десктопные приложения"
+									sizes="{min-width: 1200px} 370px"
+								/>
+							</picture>
 							<p class="work-title">Десктопные приложения</p>
 						</li>
 						<li class="work-box">
-							<img src="./images/img-fone.jpg" alt="Телефон" width="370" />
+							<picture>
+								<source
+									srcset="./images/mobapp370.webp, ./images/mobapp370@2x.webp 2x, ./images/mobapp370@3x.webp 3x"
+									type="image/webp"
+									media="(min-width: 1200px)"
+									sizes="{min-width:1200px} 370px"
+								/>
+								<img
+									srcset="./images/mobapp370.jpg, ./images/mobapp370@2x.jpg 2x, ./images/mobapp370@3x.jpg 3x"
+									src="./images/mobapp370.jpg"
+									alt="Мобильные приложения"
+									sizes="{min-width: 1200px} 370px"
+								/>
+							</picture>
 							<p class="work-title">Мобильные приложения</p>
 						</li>
 						<li class="work-box">
-							<img src="./images/img-computer.jpg" alt="Компьютер" width="370" />
+							<picture>
+								<source
+									srcset="
+										./images/dessol370.webp     370w,
+										./images/dessol370@2x.webp  740w,
+										./images/dessol370@3x.webp 1110w
+									"
+									type="image/webp"
+									media="(min-width: 1200px)"
+									sizes="{min-width:1200px} 370px"
+								/>
+							</picture>
+							<img
+								srcset="./images/dessol370.jpg, ./images/dessol370@2x.jpg 2x, ./images/dessol370@3x.jpg 3x"
+								src="./images/dessol370.jpg"
+								alt="Дизайнерские решения"
+								sizes="370px"
+							/>
+
 							<p class="work-title">Дизайнерские решения</p>
 						</li>
 					</ul>
@@ -137,8 +181,57 @@
 					<h2 class="section-title">Наша команда</h2>
 					<ul class="team-list">
 						<li class="team-card">
-							<img src="./images/john.jpg" alt="Джон Смит" width="270" />
-							<h3 class="team-title">Джон Смит</h3>
+							<picture>
+								<source
+									srcset="
+										./images/nikdesk270.webp    270w,
+										./images/nikdesk270@2x.webp 540w,
+										./images/nikdesk270@3x.webp 810w
+									"
+									type="image/webp"
+									media="(min-width: 1200px)"
+									sizes="{min-width: 1200px} 270px, {min-width: 768px} 354px, 450px "
+								/>
+								<source
+									srcset="
+										./images/niktab354.webp     354w,
+										./images/niktab354@2x.webp  708w,
+										./images/niktab354@3x.webp 1062w
+									"
+									type="image/webp"
+									media="(min-width: 768px)"
+									sizes="{min-width: 1200px} 270px, {min-width: 768px} 354px, 450px "
+								/>
+								<source
+									srcset="
+										./images/nikmob450.webp     450w,
+										./images/nikmob450@2x.webp  900w,
+										./images/nikmob450@3x.webp 1350w
+									"
+									type="image/webp"
+									media="(max-width: 767px)"
+									sizes="{min-width: 1200px} 270px, {min-width: 768px} 354px, 450px "
+								/>
+
+								<img
+									srcset="
+										./images/nikdesk270.jpg     270w,
+										./images/niktab354.jpg      354w,
+										./images/nikmob450.jpg      450w,
+										./images/nikdesk270@2x.jpg  540w,
+										./images/niktab354@2x.jpg   708w,
+										./images/nikdesk270@3x.jpg  810w,
+										./images/nikmob450@2x.jpg   900w,
+										./images/niktab354@3x.jpg  1062w,
+										./images/nikmob450@3x.jpg  1350w
+									"
+									src="./images/nikdesk270.jpg"
+									alt="Николай Кучеренко"
+									sizes="{min-width: 1200px} 270px, {min-width: 768px} 354px, 450px "
+								/>
+							</picture>
+
+							<h3 class="team-title">Николай Кучеренко</h3>
 							<p class="team-text">Продакт дизайнер</p>
 							<ul class="team-media">
 								<li class="icon-media">
@@ -172,8 +265,48 @@
 							</ul>
 						</li>
 						<li class="team-card">
-							<img src="./images/marta.jpg" alt="Марта Стьюарт" width="270" />
-							<h3 class="team-title">Марта Стьюарт</h3>
+							<picture>
+								<source
+									srcset="
+										./images/oldesk270.webp    270w,
+										./images/oldesk270@2x.webp 540w,
+										./images/oldesk270@3x.webp 810w
+									"
+									type="image/webp"
+									media="(min-width: 1200px)"
+									sizes="{min-width: 1200px} 270px, {min-width: 768px} 354px, 450px "
+								/>
+								<source
+									srcset="./images/oltab354.webp 354w, ./images/oltab354@2x.webp 708w, ./images/oltab354@3x.webp 1062w"
+									type="image/webp"
+									media="(min-width: 768px)"
+									sizes="{min-width: 1200px} 270px, {min-width: 768px} 354px, 450px "
+								/>
+								<source
+									srcset="./images/olmob450.webp 450w, ./images/olmob450@2x.webp 900w, ./images/olmob450@3x.webp 1350w"
+									type="image/webp"
+									media="(max-width: 767px)"
+									sizes="{min-width: 1200px} 270px, {min-width: 768px} 354px, 450px "
+								/>
+
+								<img
+									srcset="
+										./images/oldesk270.jpg     270w,
+										./images/oltab354.jpg      354w,
+										./images/olmob450.jpg      450w,
+										./images/oldesk270@2x.jpg  540w,
+										./images/oltab354@2x.jpg   708w,
+										./images/oldesk270@3x.jpg  810w,
+										./images/olmob450@2x.jpg   900w,
+										./images/oltab354@3x.jpg  1062w,
+										./images/olmob450@3x.jpg  1350w
+									"
+									src="./images/oldesk270.jpg"
+									alt="Ольга Иванова"
+									sizes="{min-width: 1200px} 270px, {min-width: 768px} 354px, 450px "
+								/>
+							</picture>
+							<h3 class="team-title">Ольга Иванова</h3>
 							<p class="team-text">Фронтенд разработчик</p>
 							<ul class="team-media">
 								<li class="icon-media">
@@ -207,8 +340,48 @@
 							</ul>
 						</li>
 						<li class="team-card">
-							<img src="./images/robert.jpg" alt="Роберт Якис" width="270" />
-							<h3 class="team-title">Роберт Якис</h3>
+							<picture>
+								<source
+									srcset="
+										./images/andesk270.webp    270w,
+										./images/andesk270@2x.webp 540w,
+										./images/andesk270@3x.webp 810w
+									"
+									type="image/webp"
+									media="(min-width: 1200px)"
+									sizes="{min-width: 1200px} 270px, {min-width: 768px} 354px, 450px "
+								/>
+								<source
+									srcset="./images/antab354.webp 354w, ./images/antab354@2x.webp 708w, ./images/antab354@3x.webp 1062w"
+									type="image/webp"
+									media="(min-width: 768px)"
+									sizes="{min-width: 1200px} 270px, {min-width: 768px} 354px, 450px "
+								/>
+								<source
+									srcset="./images/anmob450.webp 450w, ./images/anmob450@2x.webp 900w, ./images/anmob450@3x.webp 1350w"
+									type="image/webp"
+									media="(max-width: 767px)"
+									sizes="{min-width: 1200px} 270px, {min-width: 768px} 354px, 450px "
+								/>
+
+								<img
+									srcset="
+										./images/andesk270.jpg     270w,
+										./images/antab354.jpg      354w,
+										./images/anmob450.jpg      450w,
+										./images/andesk270@2x.jpg  540w,
+										./images/antab354@2x.jpg   708w,
+										./images/andesk270@3x.jpg  810w,
+										./images/anmob450@2x.jpg   900w,
+										./images/antab354@3x.jpg  1062w,
+										./images/anmob450@3x.jpg  1350w
+									"
+									src="./images/andesk270.jpg"
+									alt="Андрей Шевченко"
+									sizes="{min-width: 1200px} 270px, {min-width: 768px} 354px, 450px "
+								/>
+							</picture>
+							<h3 class="team-title">Андрей Шевченко</h3>
 							<p class="team-text">Маркетолог</p>
 							<ul class="team-media">
 								<li class="icon-media">
@@ -242,8 +415,48 @@
 							</ul>
 						</li>
 						<li class="team-card">
-							<img src="./images/martin.jpg" alt="Мартин Дое" width="270" />
-							<h3 class="team-title">Мартин Дое</h3>
+							<picture>
+								<source
+									srcset="
+										./images/ivdesk270.webp    270w,
+										./images/ivdesk270@2x.webp 540w,
+										./images/ivdesk270@3x.webp 810w
+									"
+									type="image/webp"
+									media="(min-width: 1200px)"
+									sizes="{min-width: 1200px} 270px, {min-width: 768px} 354px, 450px "
+								/>
+								<source
+									srcset="./images/ivtab354.webp 354w, ./images/ivtab354@2x.webp 708w, ./images/ivtab354@3x.webp 1062w"
+									type="image/webp"
+									media="(min-width: 768px)"
+									sizes="{min-width: 1200px} 270px, {min-width: 768px} 354px, 450px "
+								/>
+								<source
+									srcset="./images/ivmob450.webp 450w, ./images/ivmob450@2x.webp 900w, ./images/ivmob450@3x.webp 1350w"
+									type="image/webp"
+									media="(max-width: 767px)"
+									sizes="{min-width: 1200px} 270px, {min-width: 768px} 354px, 450px "
+								/>
+
+								<img
+									srcset="
+										./images/ivdesk270.jpg     270w,
+										./images/ivtab354.jpg      354w,
+										./images/ivmob450.jpg      450w,
+										./images/ivdesk270@2x.jpg  540w,
+										./images/ivtab354@2x.jpg   708w,
+										./images/ivdesk270@3x.jpg  810w,
+										./images/ivmob450@2x.jpg   900w,
+										./images/ivtab354@3x.jpg  1062w,
+										./images/ivmob450@3x.jpg  1350w
+									"
+									src="./images/ivdesk270.jpg"
+									alt="Иван Николаев"
+									sizes="{min-width: 1200px} 270px, {min-width: 768px} 354px, 450px "
+								/>
+							</picture>
+							<h3 class="team-title">Иван Николаев</h3>
 							<p class="team-text">UI дизайнер</p>
 							<ul class="team-media">
 								<li class="icon-media">
@@ -367,7 +580,7 @@
 								placeholder="Comments"
 							></textarea>
 						</div>
-						<div class="form-field">
+						<div class="field-policy">
 							<label class="checkbox-text">
 								<input class="checkbox" type="checkbox" name="policy" />
 								<span class="icon-check"></span>
@@ -375,13 +588,14 @@
 								<a class="contract" href="#">Условия договора</a>
 							</label>
 						</div>
-						<button type="submit" class="send">Отправить</button>
+
 						<button class="close" aria-label="Закрыть модальное окно" data-modal-close>
 							<svg class="icon-close">
 								<use href="./images/sprite-three.svg#icon-close-black"></use>
 							</svg>
 						</button>
 					</form>
+					<button type="submit" class="send">Отправить</button>
 				</div>
 			</div>
 		</main>

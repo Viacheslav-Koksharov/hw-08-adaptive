@@ -5,17 +5,38 @@
 	background-color: #f5f4fa;
 }
 .team-list {
-	// display: flex;
 	text-align: center;
+	@media screen and (max-width: 767px) {
+		display: flex;
+		flex-direction: column;
+	}
+	@media screen and (min-width: 768px) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 }
 .team-card {
 	display: block;
 	box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
 	border-radius: 0px 0px 4px 4px;
-	// width: calc((100% - 3 * 30px) / 4);
-	// &:not(:last-child) {
-	// 	margin-right: 30px;
-	// }
+	margin-bottom: 30px;
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		width: calc((100% - 30px) / 2);
+		margin-right: 30px;
+		&:nth-child(2n) {
+			margin-right: 0;
+		}
+		&:nth-child(-n + 2) {
+			margin-bottom: 30px;
+		}
+	}
+	@media screen and (min-width: 1200px) {
+		width: calc((100% - 3 * 30px) / 4);
+		&:not(:last-child) {
+			margin-right: 30px;
+		}
+	}
 }
 
 .team-title {
