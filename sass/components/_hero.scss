@@ -29,7 +29,7 @@
 @media screen and (min-width: 481px) {
 	.hero {
 		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
-			url(../images/hero-768.jpg);
+			url("../images/hero-768.jpg");
 	}
 	@media screen and (min-device-pixel-ratio: 2),
 		screen and (min-resolution: 192dpi),
@@ -52,7 +52,7 @@
 	.hero {
 		height: 600px;
 		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
-			url(../images/hero-1200.jpg);
+			url("../images/hero-1200.jpg");
 	}
 	@media screen and (min-device-pixel-ratio: 2),
 		screen and (min-resolution: 192dpi),
@@ -73,7 +73,6 @@
 }
 
 .hero-title {
-	// display: block;
 	align-items: center;
 	justify-content: center;
 	margin: 0;
@@ -81,7 +80,6 @@
 
 	font-weight: 900;
 	@media screen and (max-width: 1199px) {
-		// margin-top: 118;
 		margin-bottom: 30px;
 		font-size: 26px;
 		line-height: 1.62;
